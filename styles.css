@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Montserra;
+    src: url("fonts/montserra/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: MontserraBold;
+    src: url("fonts/montserra/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Fraunces;
+    src: url("fonts/fraunces/Fraunces_9pt-Bold.ttf") format("truetype");
+}
+
+:root { 
+    --color-promo: rgba(60, 128, 103); 
+    --background: #f2ebe3;
+    --color-button: rgba(60, 128, 103); 
+    --background-button-hover: rgba(41, 64, 50);
+    --color-text: rgb(124, 127, 133); 
+    --color-title: black;
+    --font-text: Montserra, serif;
+    --font-text-bold: MontserraBold, serif;
+    --font-title: Fraunces, serif;
+    --font-size-text: 12px;
+    --font-size-title: 32px
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 600px;
+    background-color: var(--background);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+
+}
+
+.container {
+    width: 600px;
+    display: flex;     
+    flex-direction: row;
+    justify-content: center;
+    background: white;
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+}
+
+/*   ------------------------------------Contenu gauche du container------------------------------------  */
+.section {
+    text-align: justify;
+    color: var(--color-text);
+     flex-basis: 100%;
+}
+
+/*   -----------  Contenu gauche du container : déclaration entre version desktop et mobile  -----------  */
+.section img {
+    width : 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section .mobile {
+    display: none;
+}
+
+/*   ------------------------------------  Contenu droit du container  ------------------------------------  */
+.section .sous-section {
+    padding: 20px 40px 40px 40px;
+}
+
+.categorie {
+    letter-spacing: 4px;
+    font-family: var(--font-text);
+    font-size: var(--font-size-text);
+    color: var(--color-text);
+}
+
+.title {
+    font-family: var(--font-title);
+    color: var(--color-title);
+    font-size: var(--font-size-title);
+    text-align: left;
+    line-height: 100%;
+    /* margin: 0; */
+}
+
+.paragraphe {
+    font-family: var(--font-text);
+    font-size: 13.5px;
+    line-height: 160%;
+    text-align: left;
+
+}
+
+/*   ------------------------------------  Contenu droit du container : PRIX  ------------------------------------  */
+.prix {
+    display: inline-block;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.price-promo {
+    font-family: var(--font-title);
+    color: var(--color-promo);
+    font-size: var(--font-size-title);
+    padding-right: 16px; 
+    
+}
+
+.old-price {
+    font-family: var(--font-text);
+    font-size: var(--font-size-text);
+    color: var(--color-text);
+    text-decoration: line-through;
+}
+
+/*   ------------------------------------  Contenu droit du container : Parti bouton ------------------------------------  */
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-button);
+    font-family: var(--font-text-bold);
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 14px;
+    column-gap: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.button:hover {
+    background: var(--background-button-hover);
+}
+
+.icone-cart img {
+    width: 100%;
+   
+}

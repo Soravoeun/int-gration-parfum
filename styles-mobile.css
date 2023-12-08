@@ -1,0 +1,49 @@
+@media only screen and (max-width: 600px) {
+
+    :root {
+        --font-size-text: 15px;
+        --font-size-title: 33px;
+    }
+
+    body {
+        padding: 20px; 
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    /*   ------------------------------------Contenu gauche du container------------------------------------  */
+    .section .sous-section {
+        padding: 5px 30px 30px 30px;
+    }
+
+    /*   -----------  Contenu gauche du container : déclaration entre version desktop et mobile  -----------  */
+    .section .desktop {
+        display: none;
+    }
+
+    .section .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    /*   ------------------------------------  Contenu droit du container  ------------------------------------  */
+    .categorie {
+        font-size: var(--font-size-text);
+    }
+
+    .title {
+        font-size: var(--font-size-title);
+        line-height: 100%;
+        margin-top: 0%;
+    }
+
+    .paragraphe {
+        font-size: var(--font-size-text);
+    }
+}
